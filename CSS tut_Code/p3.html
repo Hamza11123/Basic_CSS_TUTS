@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title> 
+    <style>
+
+        /* Applying Css */
+
+        #inputGender{
+            border:rgb(150, 72, 196) 2px solid;
+            background-color: rgb(199, 188, 207);            
+        }
+        #ss{
+            background-color: rgb(182, 182, 228);
+            width: 45px;
+            margin: 34px;
+            padding: 34px;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <h3>
+        Form:-
+    </h3>
+    <form action="backend.php">
+        <label for="n">Name:</label>
+        <div id="inputText">
+            
+            <input type="text" name="UserName" id="n">
+            Father Name:
+            <input type="text" name="UsersFatherName" id="">
+        </div>
+        <div id="inputEmail">
+
+            Email:
+            <input type="email" name="" id="">
+        </div>
+
+        <div id="inputPass">
+            Password:
+            <input type="password" name="AccountPass" id="">
+
+        </div>
+        gender:
+        <div id="inputGender"><!-- I used Same Containers So That User Can Enter Only One Information  -->
+            <input type="radio" name="my" id="s">
+            <input type="text" name="UsersFatherName" id="ss">
+        </div>
+        <div><br>
+            <textarea name="CommentsForUser" id="" cols="30" rows="10"></textarea>
+        </div>
+    </form>
+    
+</body>
+</html>

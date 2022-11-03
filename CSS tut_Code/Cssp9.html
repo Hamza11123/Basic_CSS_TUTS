@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows And Text Shadow</title>
+    <style>
+        .cont{
+            display: flex;
+        }
+
+        .Box{
+            background-color: blanchedalmond;
+            margin: 10px;
+            padding: 10px;
+
+            
+            /* ================================== Reference About Shadow ======================================== */
+
+            /*box-shadow: X Y Color;  "The Box Shadow Value Can Be +ve Or -ve Also (All Integers Are Acceptable)" */
+
+            /* ================================== General Syntax (SHORT HAND RELATED TO SHADOW PROPERTY) ======================================== */
+            
+            /*1: box-shadow: Offset(X) Offset(Y) Color*/
+            /*2: box-shadow: Offset(X) Offset(Y) Blur-Radius Color*/
+            /*3: box-shadow: Offset(X) Offset(Y) Blur-Radius Spread-Radius Color*/
+
+            
+
+            box-shadow: 5px 5px 20px -2px rgb(202, 171, 171, 0.8);
+
+            
+            /* text-shadow: OffsetX OffsetY Blur Color; */
+            
+            text-shadow: 2px 2px 2px white;
+
+
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="cont">
+        <div class="Box">
+            <h3>Card-1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatem distinctio consequatur consectetur eaque. Quo ipsum esse, sint placeat, voluptatem velit, magni a reprehenderit repudiandae tenetur exercitationem delectus hic expedita!</p>
+        </div>
+        <div class="Box">
+            <h3>Card-2</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatem distinctio consequatur consectetur eaque. Quo ipsum esse, sint placeat, voluptatem velit, magni a reprehenderit repudiandae tenetur exercitationem delectus hic expedita!</p>
+        </div>
+        <div class="Box">
+            <h3>Card-3</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi voluptatem distinctio consequatur consectetur eaque. Quo ipsum esse, sint placeat, voluptatem velit, magni a reprehenderit repudiandae tenetur exercitationem delectus hic expedita!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+
+    <!-- I'm Using Web Fonts From >>> The Website "Google Fonts" -->
+
+    <!-- //////////////////////////////////////////////////////////////// -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+    <!-- //////////////////////////////////////////////////////////////// -->
+
+    <style>
+        /* backGround Color For Body  */
+        body{
+
+            background-color: rgb(217, 214, 214);
+        }
+
+        /* submit */
+
+        #sub{
+            
+            margin-top: 23px;
+            padding: 4px 6px 4px 6px;
+        }
+        /* Gender Selector */
+        .gender{
+            
+            margin-top: 23px;
+            margin-right: 18px;
+
+            padding: 34px;
+        }
+
+        /* Form Date */
+
+        #FormDate{
+            
+            
+            margin-top: 23px;
+            margin-left: 10px;
+            padding-right: 10px;
+        }
+        
+
+
+        /* FormPassword ID Css */
+        #FormPassword{
+            margin-left: 31px;
+            
+
+        }
+
+        /* FormEmail ID CSS */
+        #FormEmail{
+            margin-left: 10px;
+            
+        }
+
+        /* Css For Form Tag FC  */
+
+        .FC{
+            
+            margin-right: 60px;
+            margin-top: 21px;
+            margin-left: 10px;
+
+            padding-left: 5px;
+            padding-right: 7px;
+            padding-top: 6px;
+            padding-bottom: 3px;
+        }
+        
+        /* Css For The The Element (reg)*/
+            .reg{
+                border: black 1px solid;
+                padding: 12px;
+                background-color: rgb(169, 169, 169);
+                font-size: 24px;
+                margin-bottom: 40px;
+                
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;       
+                }
+    </style>
+</head>
+<body>
+
+    
+        
+
+            <h1 class="reg">
+                Registeration:
+            </h1>
+
+            <hr>
+            
+        
+            <form action="backend.php" class="Forms">
+                Name :
+                <input type="text" name="UsrNme" id="FormName" class="FC" >
+                
+                Father Name :
+                <input type="text" name="UsrsFatherNme" id="FormFatherName" class="FC">
+                
+                <br>
+                Email :
+                <input type="email" name="UserEmail" id="FormEmail" class="FC">
+
+                Password :
+                <input type="password" name="UserPassword" id="FormPassword" class="FC">
+
+                Date Of Birthday :
+                <input type="date" name="FormDates" id="FormDate">
+                <br>    
+                Male : <input type="radio" name="Gender" id="Male" class="gender">
+                Female :<input type="radio" name="Gender" id="Female" class="gender">
+                Other : <input type="radio" name="Gender" id="Others" class="gender">
+                <br>    
+                <input type="submit" value="submit" id="sub">
+        
+            </form>
+        
+    
+
+</body>
+</html>

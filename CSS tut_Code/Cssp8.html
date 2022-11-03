@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors pseudo selectors</title>
+    <style>
+        .container {
+            height: 200px;
+            width: 400px;
+            border: 2px solid red;
+        }
+
+        /*=============================================================================================================*/
+        div+p {
+            /*select Siblings*/
+            background-color: aqua;
+        }
+
+        div p {
+            /*Select jitny bhi 'p' kisi bhi 'div' k andar hn unko select kiyaa jaaegaaa*/
+            background-color: aqua;
+        }
+
+        div>p {
+            /*Sirf Div k Direct Child ko select kiyaa jaaega...OK*/
+            background-color: aqua;
+        }
+        /*=============================================================================================================*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div>
+
+            <ul>
+                <li>
+                    <p>First Para</p>
+
+                </li>
+            </ul>
+        </div>
+        <p>Outer Para</p>
+        <p>Outer Para</p>
+
+    </div>
+    <p>Outer Most Para</p>
+</body>
+
+</html>
